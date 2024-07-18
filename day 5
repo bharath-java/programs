@@ -1,0 +1,57 @@
+1.    
+  public class MethodOverloadingExample {
+    public static void printMessage(String message) {
+        System.out.println("String message: " + message);
+    }
+    public static void printMessage(int messageId) {
+        System.out.println("Int message: " + messageId);
+    }
+    public static void main(String[] args) {
+        printMessage("bharath"); 
+        printMessage(1424); 
+    }
+}
+
+
+2.     class Animal {
+    public void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+  class Dog extends Animal {
+    
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class MethodOverridingExample {
+    public static void main(String[] args) {
+        Animal animal = new Dog();
+        animal.sound(); 
+    }
+}
+
+3.
+public class Car {
+    private String model;
+
+   
+    public Car(String carModel) {
+        model = carModel;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public static void main(String[] args) {
+        Car myCar = new Car("Toyota");
+        System.out.println("My car model is: " + myCar.getModel());
+    }
+}
+
+  
+  
+              
